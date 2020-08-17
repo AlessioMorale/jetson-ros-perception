@@ -1,0 +1,9 @@
+echo prebuild
+sudo apt-get install ros-melodic-pcl-ros libflann-dev -y
+cd /ros_catkin_ws/src/vision_opencv/cv_bridge
+git apply /ros_catkin_ws/cv_bridge.patch
+cd /ros_catkin_ws
+sudo apt install cuda-cudart-10-2 cuda-cufft-10-2 cuda-curand-10-2 cuda-cusolver-10-2 cuda-cusparse-10-2 cuda-npp-10-2 cuda-nvgraph-10-2 cuda-nvrtc-10-2 libcublas10 libcudnn8 -y
+sudo apt install cuda-compiler-10-2 cuda-minimal-build-10-2 cuda-libraries-dev-10-2 libcudnn8-dev -y
+
+rosdep install --from-paths src --ignore-src --rosdistro melodic -y --skip-keys="python3-opencv opencv libopencv-dev"
