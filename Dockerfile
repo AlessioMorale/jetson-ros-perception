@@ -17,4 +17,5 @@ RUN /bin/bash -c "source /docker-entrypoint.sh && rosdep install --from-paths sr
 RUN /bin/bash -c "source /docker-entrypoint.sh && catkin config -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib/aarch64-linux-gnu/libpython3.6m.so && catkin build --no-status --interleave -v"
 
 # Set up entrypoint
-RUN echo "source /ros_perception_ws/devel/setup.bash" >> /source_workspaces
+
+RUN echo "source /ros_perception_ws/devel/setup.bash" >> /init_workspaces
