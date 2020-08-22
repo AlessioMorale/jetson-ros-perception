@@ -1,3 +1,0 @@
-echo postbuild
-sudo apt purge cuda-compiler-10-2 cuda-minimal-build-10-2 cuda-libraries-dev-10-2 libcudnn8-dev -y 
-sudo apt autoremove -y && sudo apt-get clean autoclean -y
