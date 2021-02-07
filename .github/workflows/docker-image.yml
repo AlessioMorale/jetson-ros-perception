@@ -23,7 +23,7 @@ jobs:
         change_path: "."
         short_tags: true
         # If this is set to true, *every* commit will be treated as a new version.
-        bump_each_commit: false
+        bump_each_commit: true
     - name: Build the Docker image
       env:
         image_version: ${{ steps.semver_step.outputs.version_tag }}
