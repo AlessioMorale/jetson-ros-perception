@@ -7,7 +7,7 @@ COPY ./buildfiles/* /ros_perception_ws/
 # build the workspace
 WORKDIR /ros_perception_ws
 RUN for i in *.rosinstall; do echo - $i && vcs import src < `echo $i`; done
-RUN sudo apt-get install ros-melodic-pcl-ros libflann-dev -y --no-install-recommends && \
+RUN apt-get update && apt-get install ros-melodic-pcl-ros libflann-dev -y --no-install-recommends && \
     apt-get clean autoclean -y && \
     cd /ros_perception_ws/src/vision_opencv/cv_bridge && \
     git apply /ros_perception_ws/cv_bridge.patch
