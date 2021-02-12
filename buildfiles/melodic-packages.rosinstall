@@ -1,31 +1,31 @@
 - git:
     local-name: geometry2/tf2_geometry_msgs
     uri: https://github.com/ros-gbp/geometry2-release.git
-    version: release/melodic/tf2_geometry_msgs/0.6.5-0
+    version: release/melodic/tf2_geometry_msgs
 - git:
     local-name: image_common/camera_calibration_parsers
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/melodic/camera_calibration_parsers/1.11.13-0
+    version: release/melodic/camera_calibration_parsers
 - git:
     local-name: image_common/camera_info_manager
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/melodic/camera_info_manager/1.11.13-0
+    version: release/melodic/camera_info_manager
 - git:
     local-name: image_common/image_common
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/melodic/image_common/1.11.13-0
+    version: release/melodic/image_common
 - git:
     local-name: image_common/image_transport
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/melodic/image_transport/1.11.13-0
+    version: release/melodic/image_transport
 - git:
     local-name: image_common/polled_camera
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/melodic/polled_camera/1.11.13-0
+    version: release/melodic/polled_camera
 - git:
     local-name: image_pipeline/camera_calibration
     uri: https://github.com/ros-gbp/image_pipeline-release.git
-    version: release/melodic/camera_calibration/1.15.0-1
+    version: release/melodic/camera_calibration
 - git:
     local-name: image_pipeline/depth_image_proc
     uri: https://github.com/ros-gbp/image_pipeline-release.git
@@ -33,7 +33,7 @@
 - git:
     local-name: image_pipeline/image_pipeline
     uri: https://github.com/ros-gbp/image_pipeline-release.git
-    version: release/melodic/image_pipeline/1.15.0-1
+    version: release/melodic/image_pipeline
 - git:
     local-name: image_pipeline/image_proc
     uri: https://github.com/ros-gbp/image_pipeline-release.git
@@ -45,15 +45,15 @@
 - git:
     local-name: image_pipeline/image_rotate
     uri: https://github.com/ros-gbp/image_pipeline-release.git
-    version: release/melodic/image_rotate/1.15.0-1
+    version: release/melodic/image_rotate
 - git:
     local-name: image_pipeline/image_view
     uri: https://github.com/ros-gbp/image_pipeline-release.git
-    version: release/melodic/image_view/1.15.0-1
+    version: release/melodic/image_view
 - git:
     local-name: image_pipeline/stereo_image_proc
     uri: https://github.com/ros-gbp/image_pipeline-release.git
-    version: release/melodic/stereo_image_proc/1.15.0-1
+    version: release/melodic/stereo_image_proc
 - git:
     local-name: image_transport_plugins/compressed_depth_image_transport
     uri: https://github.com/ros-gbp/image_transport_plugins-release.git
@@ -65,35 +65,43 @@
 - git:
     local-name: image_transport_plugins/image_transport_plugins
     uri: https://github.com/ros-gbp/image_transport_plugins-release.git
-    version: release/melodic/image_transport_plugins/1.9.5-0
+    version: release/melodic/image_transport_plugins
 - git:
     local-name: image_transport_plugins/theora_image_transport
     uri: https://github.com/ros-gbp/image_transport_plugins-release.git
-    version: release/melodic/theora_image_transport/1.9.5-0
+    version: release/melodic/theora_image_transport
 - git:
     local-name: laser_assembler
     uri: https://github.com/ros-gbp/laser_assembler-release.git
-    version: release/melodic/laser_assembler/1.7.7-2
+    version: release/melodic/laser_assembler
 - git:
     local-name: laser_filters
     uri: https://github.com/ros-gbp/laser_filters-release.git
-    version: release/melodic/laser_filters/1.8.11-1
+    version: release/melodic/laser_filters
 - git:
     local-name: laser_geometry
     uri: https://github.com/ros-gbp/laser_geometry-release.git
-    version: release/melodic/laser_geometry/1.6.5-1
+    version: release/melodic/laser_geometry
 - git:
     local-name: laser_pipeline
     uri: https://github.com/ros-gbp/laser_pipeline-release.git
-    version: release/melodic/laser_pipeline/1.6.3-0
+    version: release/melodic/laser_pipeline
 - git:
     local-name: metapackages/perception
     uri: https://github.com/ros-gbp/metapackages-release.git
-    version: release/melodic/perception/1.4.1-0
+    version: release/melodic/perception
 - git:
     local-name: perception_pcl/perception_pcl
     uri: https://github.com/ros-gbp/perception_pcl-release.git
-    version: release/melodic/perception_pcl/1.7.1-1
+    version: release/melodic/perception_pcl
+- git:
+    local-name: perception_pcl/pcl_ros
+    uri: https://github.com/ros-gbp/perception_pcl-release.git
+    version: release/melodic/pcl_ros
+- git:
+    local-name: perception_pcl/pcl_conversion
+    uri: https://github.com/ros-gbp/perception_pcl-release.git
+    version: release/melodic/pcl_conversions
 - git:
     local-name: vision_opencv/cv_bridge
     uri: https://github.com/ros-gbp/vision_opencv-release.git
