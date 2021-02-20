@@ -31,7 +31,7 @@ function upload_cache {
     echo uploading
     ./jfrog bt u $CACHE_ARCHIVE ${BINTRAY_PACKAGE_PATH} --user=${BINTRAY_USER} --key=${BINTRAY_API_KEY} --publish
 
-    rm ccache-data.tgz
+    rm $CACHE_ARCHIVE
     popd
 }
 
@@ -39,6 +39,7 @@ function download_cache {
     pushd /root
     ./jfrog bt dlv ${BINTRAY_PACKAGE_PATH} --user=${BINTRAY_USER} --key=${BINTRAY_API_KEY}
     tar -xvf $CACHE_ARCHIVE
+    cp /etc/ccache.conf /root/ccache
     ccache -s
     popd
 }
