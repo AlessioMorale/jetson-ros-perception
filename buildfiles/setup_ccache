@@ -39,6 +39,7 @@ function download_cache {
     pushd /root
     ./jfrog bt dlv ${BINTRAY_PACKAGE_PATH} --user=${BINTRAY_USER} --key=${BINTRAY_API_KEY}
     tar -xvf $CACHE_ARCHIVE
+    rm $CACHE_ARCHIVE
     cp /etc/ccache.conf /root/ccache
     ccache -s
     popd
